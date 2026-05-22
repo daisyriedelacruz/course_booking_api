@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const corsOptions = {
   // origin that is allowed to send requests
-  origin: ["http://localhost:3000"],
+  origin: ["http://localhost:3000", "https://ecommerce-api-vkod.onrender.com"],
   // allows credentials like authorization headers
   credentials: true,
   // Provides status code for successful request
