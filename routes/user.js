@@ -20,7 +20,7 @@ router.patch("/update-admin/:id", verify, userController.toAdmin);
 
 router.patch("/non-admin/:id", verify, userController.toNonAdmin);
 // Route to enroll a user to a couse
-router.post("/enroll", verify, verifyAdmin, userController.enroll);
+router.post("/enroll", verify, userController.enroll);
 
 //[SECTION] Activity: Route to get the user's enrollements array
 router.get("/get-enrollments", verify, userController.getEnrollments);
