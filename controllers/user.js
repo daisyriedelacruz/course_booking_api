@@ -225,6 +225,7 @@ module.exports.enroll = (req, res) => {
 */
 module.exports.getEnrollments = (req, res) => {
   return Enrollment.find({ userId: req.user.id })
+    .populate("enrolledCourses.courseId")
     .then((enrollments) => {
       if (enrollments.length > 0) {
         return res.status(200).send(enrollments);
