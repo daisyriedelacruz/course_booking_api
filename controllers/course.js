@@ -115,6 +115,7 @@ module.exports.updateCourse = (req, res) => {
     name: req.body.name,
     description: req.body.description,
     price: req.body.price,
+    schedule: req.body.schedule,
   };
 
   // findByIdandUpdate() finds the the document in the db and updates it automatically
