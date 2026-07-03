@@ -18,6 +18,7 @@ module.exports.addCourse = (req, res) => {
     name: req.body.name,
     description: req.body.description,
     price: req.body.price,
+    schedule: req.body.schedule,
   });
 
   Course.findOne({ name: req.body.name })
