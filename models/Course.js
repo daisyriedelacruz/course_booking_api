@@ -10,8 +10,18 @@ const courseSchema = new mongoose.Schema({
     required: [true, "Course Description is required"],
   },
   schedule: {
-    type: String,
-    required: [true, "Course Schedule is required"],
+    date: {
+      type: Date,
+      required: [true, "Class date is required"],
+    },
+    startTime: {
+      type: String,
+      required: [true, "Start time is required"],
+    },
+    endTime: {
+      type: String,
+      required: [true, "End time is required"],
+    },
   },
   price: {
     type: Number,
