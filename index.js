@@ -16,10 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const corsOptions = {
   // origin that is allowed to send requests
-  origin: [
-    "http://localhost:3000",
-    "https://course-booking-api-n8y7.onrender.com",
-  ],
+  origin: ["http://localhost:3000", "https://course-booking-jade.vercel.app/"],
   // allows credentials like authorization headers
   credentials: true,
   // Provides status code for successful request
