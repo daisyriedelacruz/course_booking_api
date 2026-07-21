@@ -6,7 +6,7 @@ A RESTful API for an online course booking platform where users can browse cours
 
 # Project Overview
 
-This Course Booking API is a backend application built using the MERN stack (MongoDB, Express.js, React, Node.js). It provides endpoints for user authentication, course management, and enrollment while implementing role-based authorization.
+This Course Booking API is a backend application built using MongoDB, Express.js, and Node.js. It provides endpoints for user authentication, course management, and enrollment while implementing role-based authorization.
 
 The API follows RESTful principles and uses JSON Web Tokens (JWT) for authentication.
 
